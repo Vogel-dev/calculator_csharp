@@ -49,6 +49,7 @@
             this.btn7 = new System.Windows.Forms.Button();
             this.btnDzielenie = new System.Windows.Forms.Button();
             this.lblHistoria = new System.Windows.Forms.Label();
+            this.btnBackspace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblWynik
@@ -285,6 +286,16 @@
             this.lblHistoria.TabIndex = 19;
             this.lblHistoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // btnBackspace
+            // 
+            this.btnBackspace.AutoSize = true;
+            this.btnBackspace.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnBackspace.Location = new System.Drawing.Point(12, 12);
+            this.btnBackspace.Name = "btnBackspace";
+            this.btnBackspace.Size = new System.Drawing.Size(6, 6);
+            this.btnBackspace.TabIndex = 20;
+            this.btnBackspace.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 13F);
@@ -292,6 +303,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(343, 420);
+            this.Controls.Add(this.btnBackspace);
             this.Controls.Add(this.lblHistoria);
             this.Controls.Add(this.btnDzielenie);
             this.Controls.Add(this.btnMnozenie);
@@ -322,7 +334,6 @@
             this.Text = "Kalkulator";
             this.ResumeLayout(false);
             this.PerformLayout();
-
             btn0.Click += btnNumber_Click;
             btn1.Click += btnNumber_Click;
             btn2.Click += btnNumber_Click;
@@ -358,6 +369,7 @@
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btnDzielenie;
         private System.Windows.Forms.Label lblHistoria;
+        private System.Windows.Forms.Button btnBackspace;
     }
 }
 
