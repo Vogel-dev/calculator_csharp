@@ -42,6 +42,7 @@ namespace projekt_kalkulator_pobiektowe
         {
             liczba = double.Parse(lblWynik.Text);
             lblWynik.Text = "0";
+            lblHistoria.Text = $"{liczba} + ";
             operacja = "+";
         }
 
@@ -49,6 +50,7 @@ namespace projekt_kalkulator_pobiektowe
         {
             liczba = double.Parse(lblWynik.Text);
             lblWynik.Text = "0";
+            lblHistoria.Text = $"{liczba} - ";
             operacja = "-";
         }
 
@@ -56,6 +58,7 @@ namespace projekt_kalkulator_pobiektowe
         {
             liczba = double.Parse(lblWynik.Text);
             lblWynik.Text = "0";
+            lblHistoria.Text = $"{liczba} * ";
             operacja = "*";
         }
 
@@ -63,6 +66,7 @@ namespace projekt_kalkulator_pobiektowe
         {
             liczba = double.Parse(lblWynik.Text);
             lblWynik.Text = "0";
+            lblHistoria.Text = $"{liczba} / ";
             operacja = "/";
         }
 
