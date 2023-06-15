@@ -102,11 +102,12 @@ namespace projekt_kalkulator_pobiektowe
             {
                 if (liczba2 == 0)
                 {
+                    lblHistoria.Text = "";
+                    lblWynik.Text = "0";
                     MessageBox.Show("Nie można dzielić przez 0", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     wynik = 0;
                     liczba = 0;
                     liczba2 = 0;
-                    lblWynik.Text = "0";
                     przecinekUsed = false;
                 }
                 else
